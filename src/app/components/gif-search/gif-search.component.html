@@ -1,0 +1,14 @@
+
+    <h1> Search result: {{ busqueda }}</h1>
+    <hr>
+
+    <app-loading *ngIf="loading"></app-loading>
+
+    <div class="row">
+
+      <app-cards *ngIf="!loading" [items]="gifs_search"></app-cards>
+
+    </div>
+
+
+
